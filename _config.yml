@@ -1,0 +1,43 @@
+# Site settings
+title: Amanda Gentzel bleeeehhhhhh
+description: Graduate Research Assistant
+url: "http://cs.umass.edu/~agentzel" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Author settings
+author:
+  name     : Amanda Gentzel
+#  bio      : Front End Developer passionate about new technologies. I am passionate about what I do and I try to learn more every day.
+  email    : agentzel@cs.umass.edu
+#  twitter  : https://twitter.com/mateussousam
+
+#SEO settings
+logo: /assets/img/img-blog.png/ # Site logo URL
+twitter_username: mateussousam # Twitter username
+facebook:
+    app_id: 1445035275808959 # App ID
+    publisher: https://www.facebook.com/mateus.sousamedeiros # URL of the Facebook page
+    admins: 100000229048939 # Facebook user ID that manages the page
+
+# Build settings
+permalink: /:title/
+markdown: kramdown
+paginate: 5
+paginate_path: "/blog/page/:num"
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-mentions
+  - jekyll-gist
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+css_folder:  "/assets/css"
+js_folder:  "/assets/js"
+img_folder:  "/assets/img"
+sass:
+    style: compressed
